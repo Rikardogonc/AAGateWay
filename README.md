@@ -1,5 +1,12 @@
 # AAGateWay
 
+Instructions : 
+
+1. Close aastarter app no need anymore
+2. Open AA developer settings and Start Headunit Server
+3. Open aagateway on slave and change 1st option to "connecting mode"
+4. Open wifi on slave and hotspot on master and once connection done plug your slave via usb cable to the car and the same wireless connection should happend
+
 A modified version of [AAGateWay](https://github.com/borconi/AAGateWay) that requires [AAstarter](https://github.com/olivluca/AAstarter) on the master phone.
 
 I only tested it on my car (with a MIB 2 headuint) and my phones. The master is a Xiaomi Redmi Note 4, the slave is a Motorola Moto E 2015 (surnia), both running
