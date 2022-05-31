@@ -29,6 +29,6 @@ jobs:
       uses: actions/upload-artifact@v3.1.0
       with:
         name: AAGW
-        path: ./APK/*
+        path: ./app/build/outputs/apk/debug/*
         if-no-files-found: warn
       
