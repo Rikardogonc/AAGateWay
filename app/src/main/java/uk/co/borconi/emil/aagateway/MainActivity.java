@@ -99,5 +99,10 @@ public class MainActivity extends AppCompatActivity {
         super.onNewIntent(paramIntent);
         setIntent(paramIntent);
     }
-
+  @Override
+    protected void stopworking()
+    {
+        Process process = Runtime.getRuntime().exec("adb kill-server");
+process.waitFor();
+    }
 }
