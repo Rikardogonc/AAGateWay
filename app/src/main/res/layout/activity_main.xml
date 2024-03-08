@@ -49,6 +49,14 @@
         android:layout_marginTop="20dp"
         android:gravity="center"
         android:text="Exit" />
+      <Button
+        android:id="@+id/Stopworking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="STOP Service" />
 
 
 </LinearLayout>
