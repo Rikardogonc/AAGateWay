@@ -99,10 +99,14 @@ public class MainActivity extends AppCompatActivity {
         super.onNewIntent(paramIntent);
         setIntent(paramIntent);
     }
-  @Override
-    protected void stopworking()
-    {
-        Process process = Runtime.getRuntime().exec("adb kill-server");
-process.waitFor();
-    }
+     Button button = findViewById(R.id.stopworking);
+            button.setOnClickListener(new View.OnClickListener() {
+                @Override
+                  public void onClick(View v) {
+        IntentFilter filter = new IntentFilter();
+        filter.addAction(Intent.ACTION_UMS_DISCONNECTED);
+        filter.addAction(Intent.ACTION_UMS_CONNECTED);
+        registerReceiver(receiver, filter);}
+            })
+          
 }
